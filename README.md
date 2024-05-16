@@ -198,12 +198,6 @@ apt install -y nfs-common
 ```
 
 
-systemctl start nfs
-systemctl stop nfs
-systemctl status nfs
-
-
-
 ### Create a mount point:: 
 
 Mount NFS clients manually:
