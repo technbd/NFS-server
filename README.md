@@ -220,11 +220,13 @@ showmount -e 192.168.168.1
 ```
 ### Mount the NFS share:  (Replace the IP address of your NFS server).
 
-mount 192.168.168.1:/nfs_share /nfs_data
+mount -t nfs {NFS_server_IP}:{shared_dir_path_server} /path/to/client_dir_path
+
+mount -t nfs 192.168.168.1:/nfs_share /nfs_data
 
 or,
 
-mount -t nfs 192.168.168.1:/nfs_share /nfs_data
+mount 192.168.168.1:/nfs_share /nfs_data
 ```
 
 
