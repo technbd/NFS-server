@@ -112,6 +112,7 @@ vim /etc/exports
 /nfs_share *(rw,no_root_squash)
 
 ## Specific client IP (Share access to particular host)
+#/nfs_share  client_IP (rw,sync,no_root_squash)
 #/nfs_share 192.168.168.1 (rw,sync,no_root_squash)
 
 ## Specifies the subnet (Share access to particular network):
